@@ -26,7 +26,7 @@ export function About() {
     setFact(FUN_FACTS[Math.floor(Math.random() * FUN_FACTS.length)]);
   useEffect(() => {
     refreshFact();
-  }, []);
+  }, [refreshFact]);
   return (
     <section id="about" className="section py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6 md:px-8">

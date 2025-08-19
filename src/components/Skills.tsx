@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FiCode, FiCpu, FiLayout, FiTrendingUp, FiActivity } from "react-icons/fi";
+import { FiCode, FiLayout, FiTrendingUp, FiActivity } from "react-icons/fi";
  
 
 const skills = [

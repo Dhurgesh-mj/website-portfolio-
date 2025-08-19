@@ -34,7 +34,7 @@ export function Hero() {
               links: { enable: true, color: "#94a3b8", opacity: 0.3 },
               move: { enable: true, speed: 0.6 },
               opacity: { value: 0.5 },
-              number: { value: 60, density: { enable: true, area: 800 } },
+              number: { value: 60, density: { enable: true } },
               size: { value: { min: 1, max: 3 } },
             },
           }}

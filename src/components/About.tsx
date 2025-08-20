@@ -30,9 +30,9 @@ export function About() {
   return (
     <section id="about" className="section py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="grid md:grid-cols-5 gap-10 items-center">
-          <div className="md:col-span-2">
-            <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden glass neon mx-auto flip" onMouseEnter={refreshFact}>
+        <div className="flex flex-col md:flex-row gap-10 items-center">
+          <div className="w-full md:w-auto">
+            <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden glass neon mx-auto flip float" onMouseEnter={refreshFact}>
               <div className="flip-inner">
                 <div className="flip-front absolute inset-0">
                   <Image
@@ -42,7 +42,7 @@ export function About() {
                     priority
                     unoptimized
                     sizes="(max-width: 768px) 12rem, 16rem"
-                    className="object-cover object-top avatar-blend"
+                    className="object-cover object-center avatar-blend"
                   />
                   <div className="absolute inset-0 avatar-overlay" />
                 </div>
@@ -52,14 +52,14 @@ export function About() {
               </div>
             </div>
           </div>
-          <div className="md:col-span-3">
-            <h2 className="text-3xl md:text-4xl font-bold">About Me</h2>
-            <p className="mt-4 text-[var(--muted)] leading-relaxed">
+          <div className="flex-1 text-center md:text-left flex flex-col justify-center md:pl-16">
+            <h2 className="text-4xl md:text-5xl font-bold">About Me</h2>
+            <p className="mt-4 text-lg md:text-xl text-[var(--muted)] leading-relaxed">
               I love diving deep into binary exploitation, web hacking, and API security. I build tools for
               offensive security in Python (FastAPI, async scanners) and explore network security, forensics,
               automation, and AI-driven pentesting.
             </p>
-            <div className="mt-8 grid sm:grid-cols-3 gap-4">
+            <div className="mt-8 grid sm:grid-cols-3 gap-4 justify-items-center md:justify-items-start">
               {[
                 { icon: <FiZap />, title: "Binary Whisperer 🧨" },
                 { icon: <FiShield />, title: "API Lockpicker 🔐" },

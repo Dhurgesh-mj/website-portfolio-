@@ -53,7 +53,7 @@ export function Experience() {
                 transition={{ delay: 0.05 * i }}
                 className="relative pl-10 group"
               >
-                <div className="absolute left-0 top-2 size-2.5 rounded-full bg-white/40 shadow-[0_0_12px_rgba(88,101,242,0.6)]" />
+                <div className="absolute left-0 top-2 size-2.5 rounded-full bg-white/40 shadow-[0_0_12px_rgba(88,101,242,0.6)] pulse" />
                 <div className="glass rounded-xl p-4 transition-transform duration-200 group-hover:scale-[1.01] group-hover:rotate-[0.2deg]">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <div>

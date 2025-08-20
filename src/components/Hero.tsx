@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
 import { FiArrowDownRight } from "react-icons/fi";
 import { GlitchText } from "@/components/GlitchText";
+import { Magnetic } from "@/components/Magnetic";
 
 export function Hero() {
   const [ready, setReady] = useState(false);
@@ -48,7 +49,7 @@ export function Hero() {
           transition={{ duration: 0.7 }}
           className="text-4xl md:text-6xl font-extrabold tracking-tight"
         >
-          <GlitchText className="gradient-text" text="Hi, I'm MJ DHURGESH" />
+          <GlitchText className="gradient-text" text="HI, I'm MJ DHURGESH" />
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 10 }}
@@ -64,12 +65,16 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-8 flex items-center justify-center gap-4"
         >
-          <a href="#projects" className="btn-glow glass rounded-full px-6 py-3 text-sm md:text-base">
-            View Projects
-          </a>
-          <a href="#contact" className="btn-glow glass rounded-full px-6 py-3 text-sm md:text-base">
-            Contact Me
-          </a>
+          <Magnetic>
+            <a href="#projects" className="btn-glow glass rounded-full px-6 py-3 text-sm md:text-base">
+              View Projects
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <a href="#contact" className="btn-glow glass rounded-full px-6 py-3 text-sm md:text-base">
+              Contact Me
+            </a>
+          </Magnetic>
         </motion.div>
 
         <motion.div
